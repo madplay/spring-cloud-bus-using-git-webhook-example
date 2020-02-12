@@ -1,0 +1,14 @@
+server:
+  port: 8089
+spring:
+  rabbitmq: # RabbitMQ 관련 설정
+    host: localhost
+    port: 5672
+    username: madplay
+    password: madplay
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh
